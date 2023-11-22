@@ -1,0 +1,130 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "product_type",
+    "dateExported": "2023-11-22T18:57:51.434Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ee346fa1-b1d3-43b4-a179-8f01a05d19e3",
+            "colId": "410aca86-2ae6-46df-a8cb-7d1248df3009",
+            "containerId": "",
+            "name": "get_product_types",
+            "url": "http://localhost:8000/api/product_type/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-22T18:55:02.828Z",
+            "modified": "2023-11-22T18:55:10.822Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "807ae77a-a324-4b0d-a516-8b08b31010df",
+            "colId": "410aca86-2ae6-46df-a8cb-7d1248df3009",
+            "containerId": "",
+            "name": "get_product_type",
+            "url": "http://localhost:8000/api/product_type/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-22T18:55:13.682Z",
+            "modified": "2023-11-22T18:55:22.910Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "70587e48-59fc-4694-88c4-30e5d8ab4701",
+            "colId": "410aca86-2ae6-46df-a8cb-7d1248df3009",
+            "containerId": "",
+            "name": "post_product_type",
+            "url": "http://localhost:8000/api/product_type/?name=Alma&description=Egy friss, piros alma...&cost=60",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-11-22T18:55:25.274Z",
+            "modified": "2023-11-22T18:56:18.973Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Alma",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "Egy friss, piros alma...",
+                    "isPath": false
+                },
+                {
+                    "name": "cost",
+                    "value": "60",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c03b8a0a-d081-4bb9-a1b0-17aea4bd8ddc",
+            "colId": "410aca86-2ae6-46df-a8cb-7d1248df3009",
+            "containerId": "",
+            "name": "put_product_type",
+            "url": "http://localhost:8000/api/product_type/5?name=Banán&description=Egy barna banán...&cost=300",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-11-22T18:56:36.442Z",
+            "modified": "2023-11-22T18:57:11.577Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Banán",
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "Egy barna banán...",
+                    "isPath": false
+                },
+                {
+                    "name": "cost",
+                    "value": "300",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7f85e20b-a40b-4bd6-9507-9ae5071f2f71",
+            "colId": "410aca86-2ae6-46df-a8cb-7d1248df3009",
+            "containerId": "",
+            "name": "put_product_type Copy",
+            "url": "http://localhost:8000/api/product_type/6",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-22T18:57:17.522Z",
+            "modified": "2023-11-22T18:57:27.511Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Banán",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "description",
+                    "value": "Egy barna banán...",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "cost",
+                    "value": "300",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,11 +16,27 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->integer('balance');
             $table->timestamps();
         });
+
+        User::create([
+            'name' => 'Én',
+            'email' => 'en@dolgozat.hu',
+            'balance' => 0,
+        ]);
+
+        User::create([
+            'name' => 'Te',
+            'email' => 'te@dolgozat.hu',
+            'balance' => 100000,
+        ]);
+
+        User::create([
+            'name' => 'Ő',
+            'email' => 'o@dolgozat.hu',
+            'balance' => -9999999,
+        ]);
     }
 
     /**

@@ -17,7 +17,9 @@ class ProductTypeFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake('hu_HU')->realText(50),
+            'description' => fake('hu_HU')->realText(150),
+            'cost' => rand(500, 15000)
         ];
     }
 }
